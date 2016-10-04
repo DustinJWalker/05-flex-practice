@@ -52,13 +52,15 @@ body {
 
 .maroon-text {
   position: absolute;
-  transform: translate(50%, 0%);
+  transform: translate(50%,  50%);
 }
 //
 
 //small card section
 .small-contatiner {
+
   max-width: 100%;
+
 
 }
 //
@@ -66,9 +68,22 @@ body {
 //small card
 .small-card {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   width: calc(100% / 5);
+  max-width: 24%;
+  margin: 1rem;
+  border: 1px solid black;
+}
+
+
+.small  {
+  max-width: 100%;
+}
+
+.text  {
+  max-width: 54%;
 }
 
 //small card img
