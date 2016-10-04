@@ -5,6 +5,9 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 
+body {
+  margin: 0;
+}
 //nav bar section
 .nav-bar {
   display: flex;
@@ -25,34 +28,37 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid;
+
   background-color: #1b2977;
   color: #eee;
+
+  min-height: 20rem;
 }
 
 //
-.container  {
+.container {
   max-width: 100%;
 }
 
 //maroon section
 .maroon-box {
   display: flex;
-  position: absolute;
 
-  transform: translate(50%, 0%);
-
+  min-height: 20rem;
 
   background-color: maroon;
   color: white;
+}
+
+.maroon-text {
+  position: absolute;
+  transform: translate(50%, 0%);
 }
 //
 
 //small card section
 .small-contatiner {
   max-width: 100%;
-
-
 
 }
 //
