@@ -5,34 +5,80 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
 @import 'font-awesome';
-@import 'box-sizing';
 @import 'components/options';
 
-
+//nav bar section
 .nav-bar  {
   background-color: #962ab7;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-text  {
-  max-width: 65rem;
+
 }
 
 .nav-items ul {
   list-style-type: none;
 }
+//
+
+
+//navy box section
 
 .navy-box  {
+  max-width: 65rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: #1b2977;
   color: #eee;
 }
 
+//
+
+
+//maroon section
 .maroon-box  {
+  max-width: 65rem;
+  position-relative;
+  transform: translate(-50%,-50%);
   background-color: maroon;
   color: white;
+}
+//
 
+//small card section
+.small-contatiner  {
+  margin: 65rem;
+}
+//
+
+//small card
+.small-card  {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 5);
 }
 
+//small card img
+.cera-big  {
+  max-width: 15%;
+}
+
+//big card
+.big-container  {
+  margin: 65rem;
+}
+
+//big card
+.big-card  {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
 
 
 .sticky-footer  {
