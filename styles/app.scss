@@ -4,32 +4,22 @@
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
-@import 'font-awesome';
-@import 'components/options';
 
 //nav bar section
-.nav-bar  {
+.nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: #962ab7;
   color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
-.nav-text  {
-
-}
-
-.nav-items ul {
-  list-style-type: none;
-}
 //
-
 
 //navy box section
 
-.navy-box  {
-  max-width: 65rem;
+.navy-box {
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -39,61 +29,62 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 //
 
-
 //maroon section
-.maroon-box  {
-  max-width: 65rem;
-  position-relative;
-  transform: translate(-50%,-50%);
+.maroon-box {
+  display: flex;
+  position: relative;
+  transform: translate(0%, 0%);
+
   background-color: maroon;
   color: white;
 }
 //
 
 //small card section
-.small-contatiner  {
+.small-contatiner {
   margin: 65rem;
 }
 //
 
 //small card
-.small-card  {
+.small-card {
   display: flex;
   flex-direction: column;
   width: calc(100% / 5);
 }
 
 //small card img
-.cera-big  {
+.cera-big {
   max-width: 15%;
 }
 
 //big card
-.big-container  {
+.big-container {
   margin: 65rem;
 }
 
 //big card
-.big-card  {
+.big-card {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
   max-width: 100%;
 }
 
-
-.sticky-footer  {
-
+// footer
+.sticky-footer {
+  display: flex;
 
   background: #333;
-  color: $c-white;
   overflow: auto;
 }
 
-.footer-links  {
+.footer-links {
   list-style-type: none;
 }
 
-.full-page  {
+.full-page {
   display: flex;
   flex-direction: column;
 }
