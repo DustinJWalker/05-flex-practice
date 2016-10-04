@@ -10,6 +10,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border: 1px solid;
   background-color: #962ab7;
   color: white;
 }
@@ -23,17 +24,23 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
   display: flex;
   flex-direction: row;
   align-items: center;
+  border: 1px solid;
   background-color: #1b2977;
   color: #eee;
 }
 
 //
+.container  {
+  max-width: 100%;
+}
 
 //maroon section
 .maroon-box {
   display: flex;
-  position: relative;
-  transform: translate(0%, 0%);
+  position: absolute;
+  max-width: 100%;
+  transform: translate(50%, 0%);
+
 
   background-color: maroon;
   color: white;
@@ -42,6 +49,7 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 
 //small card section
 .small-contatiner {
+
   margin: 65rem;
 }
 //
