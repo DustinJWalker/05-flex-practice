@@ -58,6 +58,8 @@ body {
 
 //small card section
 .small-contatiner {
+  display: flex;
+  flex-direction: row;
 
   max-width: 100%;
 
