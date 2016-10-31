@@ -9,33 +9,45 @@ body {
   margin: 0;
 }
 
+.full-page {
+  display: flex;
+  flex-direction: column;
+}
 //nav bar section
 
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  flex-grow: 1;
-  justify-content: space-between;
-  align-items: center;
 
-}
-
-.nav-bar {
-
+.navbar {
+  padding: 1rem;
   background-color: #962ab7;
   color: white;
+  min-width: 25rem;
 }
+
+.nav-container  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 25rem;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+
 
 .nav-title {
   display: flex;
-  align-items: middle;
+
 }
 
 .nav-items {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  list-style-type: none;
+}
+
+.nav-links, a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
 
 }
 
@@ -54,9 +66,7 @@ body {
 }
 
 //
-.container {
-  max-width: 100%;
-}
+
 
 //maroon section
 .maroon-box {
@@ -76,7 +86,9 @@ body {
 }
 //
 
-//small card section
+
+//
+
 .small-contatiner {
   display: flex;
   position: relative;
@@ -90,10 +102,9 @@ body {
 
 //small card
 .small-card {
-  // max-width: 70rem;
-  // margin-left: 6%;
   display: flex;
-  flex-direction: column;
+
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: calc(100% / 5);
@@ -114,6 +125,7 @@ body {
 //big card
 .big-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   max-width: 100%;
 }
@@ -121,10 +133,11 @@ body {
 //big card
 .big-card {
   display: flex;
+
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  // width: calc(100% / 5);
+
   max-width: 100%;
   margin: 1rem;
   box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.75);
@@ -148,7 +161,7 @@ body {
   list-style-type: none;
 }
 
-.footer-container  {
+.footer-container {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
