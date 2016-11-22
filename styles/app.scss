@@ -15,24 +15,22 @@ body {
 }
 //nav bar section
 
-
 .navbar {
+  min-width: 25rem;
   padding: 1rem;
   background-color: #962ab7;
   color: white;
-  min-width: 25rem;
 }
 
-.nav-container  {
+.nav-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   min-width: 25rem;
   max-width: 65rem;
+  height: 1rem;
   margin: 0 auto;
 }
-
-
 
 .nav-title {
   display: flex;
@@ -44,11 +42,19 @@ body {
   flex-direction: row;
 }
 
-.nav-links, a {
-  text-decoration: none;
+.nav-links,
+a {
+  padding: 0.5rem;
   color: white;
-  padding: 1rem;
+  text-decoration: none;
 
+}
+
+.text__container {
+  min-width: 20rem;
+  max-width: 65rem;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 //navy box section
@@ -58,59 +64,58 @@ body {
   display: flex;
 
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
+  min-width: 20rem;
+  min-height: 20rem;
   background-color: #1b2977;
   color: #eee;
-  min-height: 20rem;
 }
 
 //
 
-
 //maroon section
 .maroon-box {
-  display: flex;
   position: relative;
+  min-width: 20rem;
   min-height: 20rem;
-
   background-color: maroon;
   color: white;
+
 }
 
 .maroon-text {
   position: absolute;
-  top: 8rem;
-  left: -5%;
-  transform: translate(50%, -50%);
+  top: 50%;
+  // left: 37%;
+  margin: auto;
+  // max-width: 30%;
+  transform: translate(40%, -40%);
 }
-//
 
-
-//
-
-.small-contatiner {
-  display: flex;
-  position: relative;
-  transform: translate(40%, 0%);
-  justify-content: center;
-  // min-width: 25rem;
-  max-width: 45rem;
-
+.cera__container {
+  min-width: 20rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  // padding: 0 1rem;
 }
-//
 
-//small card
-.small-card {
+.cera__grid {
   display: flex;
-
-  flex-direction: row;
+  flex-grow: 1;
   flex-wrap: wrap;
   justify-content: center;
-  width: calc(100% / 5);
-  // max-width: 100%;
+}
+
+.cera__grid-item {
   margin: 1rem;
-  box-shadow: 2px 2px 1px 0 rgba(0,0,0,0.75);
+
+  }
+
+.cera-card  {
+  flex-basis: calc(100% / 5 - 1rem - 1rem);
+  margin: 0.5rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(0,0,0,0.4);
 
 }
 
@@ -118,9 +123,6 @@ body {
   max-width: 100%;
 }
 
-.text {
-  max-width: 54%;
-}
 
 //big card
 .big-container {
@@ -150,8 +152,8 @@ body {
 // footer
 .sticky-footer {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   background: #333;
   color: white;
   overflow: auto;
