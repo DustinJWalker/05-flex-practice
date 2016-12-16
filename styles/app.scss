@@ -9,6 +9,7 @@ body {
   margin: 0;
 }
 
+
 .full-page {
   display: flex;
   flex-direction: column;
@@ -87,17 +88,14 @@ a {
 .maroon-text {
   position: absolute;
   top: 50%;
-  // left: 37%;
   margin: auto;
-  // max-width: 30%;
   transform: translate(40%, -40%);
 }
 
 .cera__container {
   min-width: 20rem;
-  max-width: 50rem;
+  max-width: 65rem;
   margin: 0 auto;
-  // padding: 0 1rem;
 }
 
 .cera__grid {
@@ -108,12 +106,12 @@ a {
 }
 
 .cera__grid-item {
-  margin: 1rem;
 
-  }
 
-.cera-card  {
-  flex-basis: calc(100% / 5 - 1rem - 1rem);
+}
+
+.cera-card {
+  flex-basis: calc(100% / 5  - 1rem);
   margin: 0.5rem;
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(0,0,0,0.4);
 
@@ -123,22 +121,22 @@ a {
   max-width: 100%;
 }
 
-
 //big card
-.big-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 100%;
-}
+// .big-container {
+//   display: flex;
+//   flex-direction: row;
+//   max-width: 65rem;
+//   justify-content: space-around;
+//   margin: 0;
+// }
 
 //big card
 .big-card {
   display: flex;
-
+  flex-grow: 1;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  // align-items: center;
 
   max-width: 100%;
   margin: 1rem;
@@ -169,5 +167,5 @@ a {
   flex-grow: 1;
   align-items: center;
   justify-content: space-between;
-  max-width: 43rem;
+  max-width: 65rem;
 }
